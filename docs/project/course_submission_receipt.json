@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "method": "Edge课程页面作业提交框；说明文字及GitHub链接",
+  "status": "submitted_awaiting_grading",
+  "evidence": "已通过页面可访问文本读回提交时间、次数、内容及提交成功等待批改提示；非助教评分",
+  "submissions": [
+    {
+      "week": "W01",
+      "submitted_at": "2026-11-17 20:41",
+      "attempt": 1,
+      "page": "https://u.geekbang.org/lesson/909?article=1024102",
+      "assignment": "https://github.com/mige-studio/fde-coursework-qinghe/tree/main/W01",
+      "text_length": 432
+    },
+    {
+      "week": "W02",
+      "submitted_at": "2026-11-17 20:45",
+      "attempt": 1,
+      "page": "https://u.geekbang.org/lesson/909?article=1026330",
+      "assignment": "https://github.com/mige-studio/fde-coursework-qinghe/tree/main/W02",
+      "text_length": 489
+    }
+  ],
+  "packages_unchanged": true,
+  "teacher_messaged": false
+}

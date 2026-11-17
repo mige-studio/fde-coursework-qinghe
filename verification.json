@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
   "scope": "本人W01与W02课程作业；不含真实客户资料",
-  "course_submission": "not_submitted",
+  "course_submission": "submitted_awaiting_grading",
   "source_links_checked": 66,
   "credentials_exact_match_and_patterns": "passed",
   "absolute_personal_paths": "absent",
@@ -40,5 +40,6 @@
     "evidence_commit_verified": "a4f2337beb886a373375735cdea3e381569d379c",
     "unauthenticated_read": "passed",
     "remote_packages_readback": "passed"
-  }
+  },
+  "course_submission_receipt": "docs/project/course_submission_receipt.json"
 }
