@@ -1,0 +1,7 @@
+{
+  "run_folder": "artifacts/w02/runs/RUN-41c8d31df1ab42c082e7d857c6873085",
+  "status": "interrupted_before_final_run_record",
+  "reason": "准备脚本的相对路径错误，旧三场配置被误启动；及时中断后用四场配置重跑成功。",
+  "adopted": false,
+  "preservation": "原始部分请求留在本地，不伪造完成run.json，不打入成果包"
+}

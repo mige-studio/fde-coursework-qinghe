@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-11-17",
+  "baseline_evidence_cutoff": "2026-11-14 W1访谈及样例验证",
+  "baseline_status": "本次根据本人W1证据补建，非前周已提交或已批准快照",
+  "uses_teacher_checkpoint": false,
+  "id_origin": "GAP-001至008为本次首次建立；W2延续同一ID，无伪造历史编号",
+  "original_w1_workspace_modified": false,
+  "w2_changes": [
+    "GAP-002",
+    "GAP-003",
+    "GAP-004",
+    "GAP-005",
+    "GAP-007",
+    "GAP-008"
+  ],
+  "unchanged_with_reason": {
+    "GAP-001": "无新增样例运行或能力改变，已验证范围不扩大",
+    "GAP-006": "未进行生产部署或治理验证，产品说明缺口不变"
+  },
+  "classification_note": "产品已有仅限样例验证；系统适配和待判断是后续工作判断，不代表已有授权、报价或实现；用户业务采用尚待阅读。"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "question_id": "Q1",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"succeeded\",\n  \"pair_id\": \"PAIR-635fa7bae6074a74b06ae6340b61b284\",\n  \"runs\": [\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-133e6be874e242ff8bb6622726b802c1/run.json\",\n      \"run_id\": \"RUN-133e6be874e242ff8bb6622726b802c1\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": false\n    },\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-206e537a9f0e45f39160d4bd654131e5/run.json\",\n      \"run_id\": \"RUN-206e537a9f0e45f39160d4bd654131e5\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": true\n    }\n  ],\n  \"next\": \"查看 request.json 和 answer.json，在访谈与核查记录中写判读。\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "question_id": "Q2",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"succeeded\",\n  \"pair_id\": \"PAIR-f889d808fd194647b414f9580996ace7\",\n  \"runs\": [\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-9af067ed57f247f6891633e8a9dcf0fc/run.json\",\n      \"run_id\": \"RUN-9af067ed57f247f6891633e8a9dcf0fc\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": false\n    },\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-8c3b6c9649bd43ce97b736fd8530f23a/run.json\",\n      \"run_id\": \"RUN-8c3b6c9649bd43ce97b736fd8530f23a\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": true\n    }\n  ],\n  \"next\": \"查看 request.json 和 answer.json，在访谈与核查记录中写判读。\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "question_id": "Q3",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"succeeded\",\n  \"pair_id\": \"PAIR-22a0758238c94c749fece8e9d28a4305\",\n  \"runs\": [\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-3c74da03d358427e8a78cbc4fdde7490/run.json\",\n      \"run_id\": \"RUN-3c74da03d358427e8a78cbc4fdde7490\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": false\n    },\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-b1074f5656d84577bcde636d8fecc834/run.json\",\n      \"run_id\": \"RUN-b1074f5656d84577bcde636d8fecc834\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": true\n    }\n  ],\n  \"next\": \"查看 request.json 和 answer.json，在访谈与核查记录中写判读。\"\n}\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "8e0cb3c6-6c4b-497d-97d5-437bf8fe85aa",
+  "model_mode": "live",
+  "model_name": "deepseek-flash",
+  "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
+  "status": "completed",
+  "result": {
+    "status": "completed",
+    "summary": "会员 M001 的 recall_review 样例标签草案已通过受控入口完成人工确认并执行成功。系统核验最新状态为 applied（标签生效，label_active=true，版本 1），动作 id 为 dc7cf707-25a4-4803-a076-492b211f46a8。",
+    "recommendations": [],
+    "evidence_ids": [
+      "dc7cf707-25a4-4803-a076-492b211f46a8"
+    ],
+    "limitations": [
+      "本次为样例标签动作，未包含任何消费比较分析，也没有核验该会员的消费变化情况。",
+      "标签仅为样例运营标签，不代表已发生召回触达或产生实际运营效果。",
+      "后续如需撤销该标签，需由人工通过受控入口办理。"
+    ]
+  },
+  "observations": [
+    {
+      "name": "prepare_tag",
+      "result": {
+        "status": "awaiting_approval",
+        "draft": {
+          "id": "dc7cf707-25a4-4803-a076-492b211f46a8",
+          "session": "8e0cb3c6-6c4b-497d-97d5-437bf8fe85aa",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "hash": "536e0b4895d562ce37a3d8fcadc64423c47734f76f011ba0f22f62d58e8ecb85",
+          "status": "draft",
+          "result": null
+        }
+      },
+      "call_id": "call_00_gEvPYxR6GECBF5MziUZN9742"
+    },
+    {
+      "name": "tag_execution",
+      "result": {
+        "id": "dc7cf707-25a4-4803-a076-492b211f46a8",
+        "session": "8e0cb3c6-6c4b-497d-97d5-437bf8fe85aa",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "536e0b4895d562ce37a3d8fcadc64423c47734f76f011ba0f22f62d58e8ecb85",
+        "status": "applied",
+        "result": {
+          "action_id": "dc7cf707-25a4-4803-a076-492b211f46a8",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 1
+        }
+      }
+    },
+    {
+      "name": "query_tag",
+      "result": {
+        "id": "dc7cf707-25a4-4803-a076-492b211f46a8",
+        "session": "8e0cb3c6-6c4b-497d-97d5-437bf8fe85aa",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "536e0b4895d562ce37a3d8fcadc64423c47734f76f011ba0f22f62d58e8ecb85",
+        "status": "applied",
+        "result": {
+          "action_id": "dc7cf707-25a4-4803-a076-492b211f46a8",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 1
+        }
+      },
+      "call_id": "call_00_VRLKAwGkrvzecCttzD241599"
+    }
+  ],
+  "steps": 3,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 6356,
+    "completion_tokens": 525,
+    "total_tokens": 6881
+  },
+  "trace_id": "0abc9ae4392db1a075ac7606f01eaa96"
+}

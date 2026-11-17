@@ -1,0 +1,20 @@
+{
+  "adapter": "w02-natural-0.1.0",
+  "config_path": "customer/w02/knowledge.json",
+  "question": "青禾优选想先做会员回访的前期核查，再考虑实施。费用、双方责任和验收付款应怎样推进？目前有哪些依据？",
+  "expected": "用王经理范围、费用构成及依据、双方责任、效果记录四项关注点；按动作列费用，不编金额或预算来源；其核查顺序不是公司审批制度；不掌握正式验收付款关系、实际案例与材料线索，不能把三份材料交齐当验收。",
+  "include_knowledge": false,
+  "pair_id": "PAIR-d431c1ee541e4c3384792a5f5686ee40",
+  "profile": "deepseek-json",
+  "model_policy": {
+    "gateway_cache_bypass": true,
+    "wire_format": "gateway-extra-body-v1",
+    "request_profile": "deepseek-json",
+    "max_tokens": 16384,
+    "retry_max_tokens": 32768,
+    "timeout": 180.0,
+    "retry_timeout": 180.0,
+    "token_limit_field": "max_tokens",
+    "extraction_thinking": "enabled"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "question_id": "Q3-revised",
+  "changes": "说明v1.1澄清未获批准不指明批准人；回答提示加强角色权限和消息归属。同组两侧使用同一新版提示。",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"succeeded\",\n  \"pair_id\": \"PAIR-2c4b3704fa54440ab431742ded8036d8\",\n  \"runs\": [\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-f796e8cfec2f45a2a351bfe3e86c3e3e/run.json\",\n      \"run_id\": \"RUN-f796e8cfec2f45a2a351bfe3e86c3e3e\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": false\n    },\n    {\n      \"status\": \"succeeded\",\n      \"run\": \"artifacts/w02/knowledge_runs/RUN-71b8d8cec84745ee8bbeb3167560fa2e/run.json\",\n      \"run_id\": \"RUN-71b8d8cec84745ee8bbeb3167560fa2e\",\n      \"error\": null,\n      \"semantic_review\": \"needs_review\",\n      \"include_knowledge\": true\n    }\n  ],\n  \"next\": \"查看 request.json 和 answer.json，在访谈与核查记录中写判读。\"\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-17",
+  "sources": [
+    {
+      "path": "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+      "sha256": "bd9ac7a94c1208d5d8ba4cc1491e7d881b439738efda7143dc7c22ea3b7bbb06",
+      "messages": 19,
+      "role": "ROLE-CHEN",
+      "matches_original": true
+    },
+    {
+      "path": "artifacts/w02/sources/W2-interview-5ea8e907-86d6-57d4-9d83-4680659a2801-transcript.json",
+      "sha256": "4ca250de0811058cc8464ff80b438495637981e77fd1d5ac9a4d9f845514cc2f",
+      "messages": 19,
+      "role": "ROLE-LIN",
+      "matches_original": true
+    },
+    {
+      "path": "artifacts/w02/sources/W2-interview-f732e638-acd9-5b8d-8429-4bdbc7d9cc19-transcript.json",
+      "sha256": "b69c8a9de391d75ce8989a52a770680e92df650375543ccc2f69171a9d0afc25",
+      "messages": 15,
+      "role": "ROLE-WANG",
+      "matches_original": true
+    },
+    {
+      "path": "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json",
+      "sha256": "34b4fa85658da7e2f7e4b871b5cbceeefed4f6886736c905df399e8fddbdfa29",
+      "messages": 15,
+      "role": "ROLE-ZHOU",
+      "matches_original": true
+    }
+  ],
+  "w1_support": [
+    {
+      "path": "artifacts/w02/w01_support/product/capabilities.json",
+      "sha256": "a7a090d59351d0f7bc47bb3da1c8f3bfb98cd1bc1e7f80031b7765478817ab25",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/runtime_evidence.json",
+      "sha256": "9d3a76edd2fc8c0d8565ba3d45f5a2bfaecf4e3e70cae2ab7bd2d7fccb04d323",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/model_baseline.json",
+      "sha256": "c5397e47b7480beb8811c45396c67533e3ec7d0da5569a6733bd0f987cf4089f",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/environment_check.json",
+      "sha256": "673f45e8bd539ecc2a4aaa8e7868409b848715bf8c65c968a8836adc5df308d5",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/promptfoo-results.json",
+      "sha256": "4d642f94583908332fe09084752986004cee3a98c418b741f7bfd7c5b696468d",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/learning/first_analysis.json",
+      "sha256": "f330c07e28fdbe25878461310c739413447627978a2f43f16b9d347b918bf13f",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/learning/independent_csv_check.json",
+      "sha256": "a09986fa84a205741de6c784cc7eb5a2613be63e6d080ad8536ce466c6e968b0",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/clarification.json",
+      "sha256": "b16ed7ed7f9e65ce7bb425320c9f7f18e5f4ae464bb53ee235fcad301ef218dc",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/refund_explanation.json",
+      "sha256": "9253f1aa0dcbd1025d85d675d50198274eda76a63d93ea9f0f7a5db1bfd30e8d",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/analysis.json",
+      "sha256": "9253f1aa0dcbd1025d85d675d50198274eda76a63d93ea9f0f7a5db1bfd30e8d",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/missing_coverage.json",
+      "sha256": "ea33898da0e0da33eb2c8bc0cc60baa26c4236b7c8625e43e82cec3ec81deb2b",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/readonly.json",
+      "sha256": "d208caa36010a1f9180430fc97265d172fbda895381177d1546a17d2b6b75114",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/http_action.json",
+      "sha256": "54d9545e9577a39a488c087f550f721fbdae99a6242c0a4447d0598361565d3f",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/idempotency.json",
+      "sha256": "adf3f518063cd470ff39917302f650cbe27e85e73e39aa38294c10fbb61da34c",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/undo.json",
+      "sha256": "897771c683d12c99e23c8d589e8bc87d34d5adb967d223e90b5fcf1b2c30a0e1",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/date_text.json",
+      "sha256": "29df32f2eab543fa6c0f54d07f0d1d3825cc406cfdc679ec09995c2d07c43bdf",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/date_button.json",
+      "sha256": "d39b5e3d63afc8939c23e0d6b6cf57f9b3cb85f2cc3fa96acefd13df65ca5196",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/reject_change.json",
+      "sha256": "0d69c3c191139456feccdba90c58d71059bf535c63194b55907665f2050d8eea",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/artifacts/w01/evidence/trace.jsonl",
+      "sha256": "650c5e9e1e78970fd9b48f6edd779c36edbff5d2e0183821571761c8575f5663",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/shen-transcript.json",
+      "sha256": "faf41871434a1dc4288ff9ab7af2cc9cc4df1dc165e367002c07f99637529179",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/05_W01立项四问_当前工作稿.source.txt",
+      "sha256": "6992dbcff26b6be756b892bf4febc7ae6711d88c509d3266cd47f20bdfc708d5",
+      "matches_recorded_source": true
+    },
+    {
+      "path": "artifacts/w02/w01_support/06_W01产品验证与学习记录.source.txt",
+      "sha256": "c2166502c2d81edda297402a6b7af68c33ef213276157f58e74bf58925294b14",
+      "matches_recorded_source": true
+    }
+  ],
+  "gap_checks": [
+    {
+      "path": "artifacts/w01/product_fit_gap.json",
+      "items": 8,
+      "evidence_paths_and_message_ids_checked": 12
+    },
+    {
+      "path": "artifacts/w02/product_fit_gap.json",
+      "items": 8,
+      "evidence_paths_and_message_ids_checked": 25
+    }
+  ],
+  "same_gap_ids": true,
+  "constraints": [
+    "W1基线为本次补建，原工程与证据未改",
+    "原始角色陈述不等于独立业务验证",
+    "来源存在与逐字匹配不自动证明语义采用正确"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "reviewer": "Codex",
+  "pairs": [
+    {
+      "question_id": "Q1-final",
+      "pair_id": "PAIR-d377eff416404bd3a509c407e6807d56",
+      "checks": [
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-e91ef03e593a4b56a82adabff1616b0d/run.json",
+          "include_knowledge": false,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        },
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-101a2d260d104f3196d015a04c43bfa8/run.json",
+          "include_knowledge": true,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        }
+      ],
+      "assertions": {
+        "same_parameters": true,
+        "same_system": true,
+        "same_question": true,
+        "empty_baseline": true,
+        "actual_current_document": true,
+        "expected_not_in_request": true
+      }
+    },
+    {
+      "question_id": "Q3-final",
+      "pair_id": "PAIR-5a2efb49f617432daff3334655ac1de4",
+      "checks": [
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-1ccde8d18175437783e1fe2c8131a0a8/run.json",
+          "include_knowledge": false,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        },
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-6d3b115ac8794fa59309ba9a77136628/run.json",
+          "include_knowledge": true,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        }
+      ],
+      "assertions": {
+        "same_parameters": true,
+        "same_system": true,
+        "same_question": true,
+        "empty_baseline": true,
+        "actual_current_document": true,
+        "expected_not_in_request": true
+      }
+    },
+    {
+      "question_id": "Q4-finance",
+      "pair_id": "PAIR-d431c1ee541e4c3384792a5f5686ee40",
+      "checks": [
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-baaa07e19b88451398098bfb088af29d/run.json",
+          "include_knowledge": false,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        },
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-81bbfb8bf61a4f8ea10919796bc91141/run.json",
+          "include_knowledge": true,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        }
+      ],
+      "assertions": {
+        "same_parameters": true,
+        "same_system": true,
+        "same_question": true,
+        "empty_baseline": true,
+        "actual_current_document": true,
+        "expected_not_in_request": true
+      }
+    },
+    {
+      "question_id": "Q5-change",
+      "pair_id": "PAIR-6e4dfac2053e4e94a96d5c1d9467539b",
+      "checks": [
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-03e2d804f0de4e47a9c7c23b328bdaf6/run.json",
+          "include_knowledge": false,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        },
+        {
+          "run": "artifacts/w02/knowledge_runs/RUN-8710d62cb23745dd95cc1d608b01d58d/run.json",
+          "include_knowledge": true,
+          "exit_code": 0,
+          "result": {
+            "status": "structure_checked",
+            "run_status": "succeeded",
+            "mode": "live",
+            "semantic_review": "required"
+          }
+        }
+      ],
+      "assertions": {
+        "same_parameters": true,
+        "same_system": true,
+        "same_question": true,
+        "empty_baseline": true,
+        "actual_current_document": true,
+        "expected_not_in_request": true
+      }
+    }
+  ],
+  "semantic_review": "see interview_notes.md; teacher/user review pending"
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "version": "w02-extractor-0.1.0",
+    "scope_id": "qinghe",
+    "sources": [
+      "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+      "artifacts/w02/sources/W2-interview-5ea8e907-86d6-57d4-9d83-4680659a2801-transcript.json",
+      "artifacts/w02/sources/W2-interview-f732e638-acd9-5b8d-8429-4bdbc7d9cc19-transcript.json",
+      "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json"
+    ],
+    "prompt": "customer/w02/extraction_prompt.txt",
+    "focus_questions": [
+      "会员对象、人数与标签分别怎样理解，哪些定义尚未核实？",
+      "运营到门店的任务安排、执行、反馈如何关联，活动适用与门店接受有什么条件？",
+      "执行完成与业务效果如何区分，实际工具负担有哪些原话和证据限制？",
+      "数据覆盖、取数权限、核查责任分别由谁怎样确认，哪些不同说法尚待对齐？",
+      "财务参与的预算、合同、验收付款及范围变化核查怎样进行，哪些权限、金额、制度和记录仍未知？"
+    ],
+    "batch_chars": 6500,
+    "max_batches": 6,
+    "reconcile_chars": 96000,
+    "profile": "deepseek-json"
+  },
+  "adapter": "w02-extractor-0.1.0",
+  "timeout_seconds": 180.0,
+  "model_policy": {
+    "gateway_cache_bypass": true,
+    "wire_format": "gateway-extra-body-v1",
+    "request_profile": "deepseek-json",
+    "max_tokens": 16384,
+    "retry_max_tokens": 32768,
+    "timeout": 180.0,
+    "retry_timeout": 180.0,
+    "token_limit_field": "max_tokens",
+    "extraction_thinking": "enabled"
+  }
+}

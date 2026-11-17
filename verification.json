@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-17",
+  "scope": "本人W01与W02课程作业；不含真实客户资料",
+  "course_submission": "not_submitted",
+  "source_links_checked": 66,
+  "credentials_exact_match_and_patterns": "passed",
+  "absolute_personal_paths": "absent",
+  "week_baseline_semantics": "consistent_after_documented_path_mapping",
+  "packages": [
+    {
+      "week": "W01",
+      "path": "packages/W01_青禾学习成果_20261117.zip",
+      "sha256": "94d359ca47d12897f72bc36b11a78fd7025fd8432bbedc918f4445a5c300dba6",
+      "bytes": 78641,
+      "files": 40,
+      "crc": "passed",
+      "extract_readback": "passed",
+      "teacher_precheck": {
+        "status": "pass",
+        "issues": []
+      }
+    },
+    {
+      "week": "W02",
+      "path": "packages/W02_青禾学习成果_GitHub_20261117.zip",
+      "sha256": "f1e9730f9d8eca0144899f64a6d69c1192536f0e9b1ba33a287e2e86d02bba0f",
+      "bytes": 3552319,
+      "files": 847,
+      "crc": "passed",
+      "extract_readback": "passed",
+      "teacher_precheck": {
+        "status": "ready_for_review",
+        "issues": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "95b1a116-cc8c-4529-8316-7728ceeb5faa",
+  "model_mode": "live",
+  "model_name": "deepseek-flash",
+  "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
+  "status": "incomplete",
+  "result": {
+    "status": "incomplete",
+    "summary": "无法完成 S03 的 7 月与 8 月老会员消费下降分析：业务数据覆盖显示 S03 只有 2026-07-01 到 2026-08-01 的数据，2026 年 8 月整月没有覆盖。compare_spending 对已确认时段（基期 2026-07-01 至 2026-08-01，对比期 2026-08-01 至 2026-09-01）返回 partial，missing_coverage_stores 为 [S03]，rows 与 declining_members 均为空。缺失是未知而非零，因此不能据此判断 S03 会员消费下降，也不能给出下降至少 20% 的名单。建议先补齐 S03 的 8 月数据后重跑同一时段；或改对 S01、S02（覆盖到 2026-09-01）做同类分析。",
+    "recommendations": [],
+    "evidence_ids": [
+      "CMP-8eb496ca71fc574d"
+    ],
+    "limitations": [
+      "S03 在 2026-08-01 至 2026-09-01 无数据覆盖，该期净消费未知，不能视为零或缺席消费。",
+      "比对结果状态为 partial，结论不可推广到未覆盖门店 S03。",
+      "因缺少对比期数据，未产生任何下降会员明细，无法提出可审核的召回建议。",
+      "本次为只读分析模式，未执行也未申请任何标签或发券动作。"
+    ]
+  },
+  "observations": [
+    {
+      "name": "describe_business",
+      "result": {
+        "status": "ok",
+        "semantics": {
+          "version": "sample-semantics-1",
+          "company": "松果生活（独立虚构样例）",
+          "objects": [
+            "Member",
+            "Order",
+            "Store",
+            "Tag"
+          ],
+          "links": [
+            "Member belongs_to Store",
+            "Order belongs_to Member"
+          ],
+          "spend": {
+            "id": "sample.net_spend.v1",
+            "aggregation": "paid_minus_refunded_cents",
+            "unit": "CNY cents",
+            "include": "status=paid",
+            "window": "start inclusive, end exclusive"
+          },
+          "old_member": {
+            "basis": "joined_before_baseline"
+          },
+          "decline": {
+            "minimum_pct": 20,
+            "formula": "(baseline-current)/baseline*100",
+            "zero_baseline": "undefined; excluded from decline cohort"
+          },
+          "recommendation_constraints": [
+            "只提出可供运营人员审核的建议，不承诺召回效果",
+            "未获得确认不执行标签动作",
+            "不声称已经发券",
+            "引用工具 evidence_id，金额只能来自工具结果"
+          ]
+        },
+        "dataset": {
+          "dataset_version": "sample-1",
+          "business_reference_date": "2026-09-01",
+          "fictional": true,
+          "company": "松果生活",
+          "description": "独立于青禾。2026 年 7 月与 8 月；S03 的 8 月没有数据覆盖，不可当作消费为零。"
+        },
+        "coverage": [
+          {
+            "store_id": "S01",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S02",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S03",
+            "start": "2026-07-01",
+            "end": "2026-08-01"
+          }
+        ],
+        "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
+      },
+      "call_id": "call_00_NlCZr7aLnh9atb705BxD0590"
+    },
+    {
+      "name": "compare_spending",
+      "result": {
+        "status": "partial",
+        "evidence_id": "CMP-8eb496ca71fc574d",
+        "dataset_version": "sample-1",
+        "metric_id": "sample.net_spend.v1",
+        "windows": {
+          "baseline": [
+            "2026-07-01",
+            "2026-08-01"
+          ],
+          "current": [
+            "2026-08-01",
+            "2026-09-01"
+          ],
+          "end_exclusive": true
+        },
+        "minimum_decline_pct": 20,
+        "rows": [],
+        "declining_members": [],
+        "missing_coverage_stores": [
+          "S03"
+        ],
+        "limitations": [
+          "未覆盖门店的消费未知，不能计为零。"
+        ],
+        "business_reference_date": "2026-09-01"
+      },
+      "call_id": "call_01_9xNqKuXKg9DDyyKJmjsa4684"
+    }
+  ],
+  "steps": 2,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 3874,
+    "completion_tokens": 685,
+    "total_tokens": 4559
+  },
+  "trace_id": "047eee08178876f458a4744ab8253a8b"
+}

@@ -1,0 +1,228 @@
+{
+  "contract_version": "w01-0.2.1",
+  "product_version": "0.2.0-w1",
+  "capability_matrix_version": "w1-capabilities-0.2.0",
+  "items": [
+    {
+      "id": "GAP-001",
+      "request": "产品验证项：用标准净消费对比识别下降会员，作为沈总重点会员筛选方向的能力参考；不是青禾已认可的名单规则。",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-003",
+        "CAP-004",
+        "CAP-006"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/artifacts/w01/runtime_evidence.json",
+          "locator": "cases:analysis,refund_explanation,missing_coverage",
+          "note": "11项真实模型验证中的标准样例分析、退款和缺覆盖检查通过；只限虚构松果样例。"
+        },
+        {
+          "source": "artifacts/w02/w01_support/artifacts/learning/independent_csv_check.json",
+          "locator": "passed,rows,excluded_stores",
+          "note": "独立CSV复算与名单金额一致；不证明青禾适配。"
+        }
+      ],
+      "next_step": "保留已验证的样例能力；青禾人群、时段和指标另按GAP-002、003核查。"
+    },
+    {
+      "id": "GAP-002",
+      "request": "将青禾重点会员、活跃、复购和会员老化假设转为可核查定义。",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/shen-transcript.json",
+          "locator": "MSG-05507,MSG-05511,MSG-05513",
+          "note": "会员老化为沈总判断；统计口径和报表未提供。"
+        },
+        {
+          "source": "artifacts/w02/w01_support/product/capabilities.json",
+          "locator": "CAP-006.scope",
+          "note": "标准净消费定义不自动支持任意客户指标。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5ea8e907-86d6-57d4-9d83-4680659a2801-transcript.json",
+          "locator": "MSG-05853,MSG-05855,MSG-05859",
+          "note": "有两类会员说法，80万与效果口径仍无法确认。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json",
+          "locator": "MSG-05866,MSG-05868,MSG-05872",
+          "note": "120万是全量陈述；活跃算法及标签含义未核实，不能推算40万流失。"
+        }
+      ],
+      "next_step": "保留待判断；共同核对会员定义、标签填报和人数报表，不因有了访谈就认定已可配置。"
+    },
+    {
+      "id": "GAP-003",
+      "request": "取得并对应青禾会员、订单及覆盖信息以支持名单核查。",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-004",
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/shen-transcript.json",
+          "locator": "MSG-05513,MSG-05517",
+          "note": "材料及查看范围待协商，系统问题指向老周，未授权取数。"
+        },
+        {
+          "source": "artifacts/w02/w01_support/product/capabilities.json",
+          "locator": "CAP-004.scope,CAP-006.scope",
+          "note": "产品只有虚构样例，青禾语义与数据适配需后续开发。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json",
+          "locator": "MSG-05870,MSG-05874,MSG-05878",
+          "note": "系统位置和同人关联未展开；缺记录不等于未购买，接入条件不等于正式权限。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+          "locator": "MSG-05897",
+          "note": "经手业务记录与系统原始数据分开；对完整性确认人指向与老周不同。"
+        }
+      ],
+      "next_step": "保留系统适配；按同一门店时段核查身份、渠道覆盖和取数条件，澄清两人各核对什么；未获数据权限。"
+    },
+    {
+      "id": "GAP-004",
+      "request": "筛出名单后让运营据此行动，明确门店安排、反馈及执行标准。",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/shen-transcript.json",
+          "locator": "MSG-05507,MSG-05517",
+          "note": "沈总希望名单支持行动；实际运营流程和接受条件未取得。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5ea8e907-86d6-57d4-9d83-4680659a2801-transcript.json",
+          "locator": "MSG-05849,MSG-05857,MSG-05859,MSG-05861",
+          "note": "通常流程、个人Excel与多三步反馈；执行记录不等于效果，具体页面未核实。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+          "locator": "MSG-05885,MSG-05889,MSG-05891,MSG-05893",
+          "note": "活动适用范围、门店接受条件、回传关系有陈述，实际反馈状态和考核口径仍未知。"
+        }
+      ],
+      "next_step": "保留待判断；自然语言说明支持解释不等于产品具备门店任务功能。取得具体任务、反馈样例和工作量依据后再分类。"
+    },
+    {
+      "id": "GAP-005",
+      "request": "如需真实标签、联系或其他客户动作，核查动作连接与授权条件。",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-002",
+        "CAP-007"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/artifacts/w01/runtime_evidence.json",
+          "locator": "cases:readonly,http_action,idempotency,undo,reject_change",
+          "note": "本机样例的拒绝、确认、执行、防重、撤销和拒绝后换目标通过；并非青禾系统。"
+        },
+        {
+          "source": "artifacts/w02/w01_support/product/capabilities.json",
+          "locator": "CAP-007.scope",
+          "note": "青禾动作连接器未实现；真实触达不是当前已验证功能。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json",
+          "locator": "MSG-05878",
+          "note": "单店样本建议未获批准，不能当成正式数据或动作权限。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+          "locator": "MSG-05897",
+          "note": "愿协调现场不等于可以替他人批准。"
+        }
+      ],
+      "next_step": "保留系统适配；真实回访/发券/打标签须单独明确动作和权限，本周只做知识问答。"
+    },
+    {
+      "id": "GAP-006",
+      "request": "将教学产品用于多用户真实生产运营。",
+      "category": "产品缺口",
+      "capability_ids": [
+        "CAP-008"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/product/capabilities.json",
+          "locator": "CAP-008.state,CAP-008.scope",
+          "note": "老师能力说明明确多用户隔离、生产认证、客户审计与灰度需扩展；本次未验证生产环境。"
+        }
+      ],
+      "next_step": "在正式生产范围确定后另行补设计和验证；本地通过不等于生产可用。"
+    },
+    {
+      "id": "GAP-007",
+      "request": "三个月看到复购止跌回升，并确定业务效果与验收。",
+      "category": "暂不承诺",
+      "capability_ids": [],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/shen-transcript.json",
+          "locator": "MSG-05507,MSG-05509,MSG-05517,MSG-05519",
+          "note": "三个月是发起人期望；提升幅度、验收口径和范围未确认，收尾未逐项认可我们的总结。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5ea8e907-86d6-57d4-9d83-4680659a2801-transcript.json",
+          "locator": "MSG-05859",
+          "note": "效果统计与复购口径未知。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-5a2ec96b-07a3-58d8-a223-65ed00bd7d1e-transcript.json",
+          "locator": "MSG-05891",
+          "note": "落实到位和经验上有用不等于已核实效果。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-f732e638-acd9-5b8d-8429-4bdbc7d9cc19-transcript.json",
+          "locator": "MSG-05906,MSG-05908",
+          "note": "功能清单不等于财务效果；验收目标及交付至付款正式关系未定或不掌握。"
+        }
+      ],
+      "next_step": "保留暂不承诺；分别确认执行、体验、经营与合同验收证据，不把交齐材料等同验收或付款。"
+    },
+    {
+      "id": "GAP-008",
+      "request": "明确材料范围、双方投入、预算和正式推进决定。",
+      "category": "暂不承诺",
+      "capability_ids": [],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "artifacts/w02/w01_support/shen-transcript.json",
+          "locator": "MSG-05513,MSG-05517",
+          "note": "需小林、王经理、老周等参与；最终审批人、流程和投入未确认。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-f732e638-acd9-5b8d-8429-4bdbc7d9cc19-transcript.json",
+          "locator": "MSG-05902,MSG-05904,MSG-05908,MSG-05912",
+          "note": "本项无已确认可用预算，金额未定；王经理只能核查；最终权限未知，范围变化要重列材料。"
+        },
+        {
+          "source": "artifacts/w02/sources/W2-interview-ff8dcecf-ce73-5f88-abf8-2c33ec35c4ec-transcript.json",
+          "locator": "MSG-05878",
+          "note": "安全责任不清可暂缓接入，正式权限未批。"
+        }
+      ],
+      "next_step": "改为暂不承诺正式投入与启动；先列范围、费用依据、双方责任和效果记录，识别审批人及授权依据。仍可继续材料整理与有限澄清。"
+    }
+  ]
+}

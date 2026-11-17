@@ -1,0 +1,119 @@
+{
+  "reviewer": "Codex",
+  "date": "2026-11-17",
+  "reviews": [
+    {
+      "question_id": "Q1-final",
+      "pair_id": "PAIR-d377eff416404bd3a509c407e6807d56",
+      "critical_requirements": "supported_in_this_run",
+      "baseline": "通用总部—门店分工与指标建议，并未冒充客户事实。",
+      "with_document": "用到小林协调、陈姐核对活动范围及门店反馈，明确05889由陈姐说；区分执行、门店体验、经营效果及合同认定。",
+      "limitations_and_disposition": "关键预期有依据；开头会员人数和标签展开过多，阅读效率仍不理想。",
+      "human_acceptance": "pending",
+      "runs": [
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-e91ef03e593a4b56a82adabff1616b0d/run.json",
+          "run_id": "RUN-e91ef03e593a4b56a82adabff1616b0d",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": false
+        },
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-101a2d260d104f3196d015a04c43bfa8/run.json",
+          "run_id": "RUN-101a2d260d104f3196d015a04c43bfa8",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q3-final",
+      "pair_id": "PAIR-5a2efb49f617432daff3334655ac1de4",
+      "critical_requirements": "supported_in_this_run",
+      "baseline": "指出通用角色与授权缺失，不能确认直接开始。",
+      "with_document": "保留三方配合与完整性责任差异，加入王经理无已确认预算及核查权限；不再把老周写成最终批准人。",
+      "limitations_and_disposition": "关键启动边界有依据；“可以准备”仅指现有材料整理，不是获准取数、联系会员或发生费用。",
+      "human_acceptance": "pending",
+      "runs": [
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-1ccde8d18175437783e1fe2c8131a0a8/run.json",
+          "run_id": "RUN-1ccde8d18175437783e1fe2c8131a0a8",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": false
+        },
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-6d3b115ac8794fa59309ba9a77136628/run.json",
+          "run_id": "RUN-6d3b115ac8794fa59309ba9a77136628",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q4-finance",
+      "pair_id": "PAIR-d431c1ee541e4c3384792a5f5686ee40",
+      "critical_requirements": "supported_in_this_run",
+      "baseline": "一般费用与责任矩阵建议，付款挂钩建议并非青禾制度。",
+      "with_document": "按王经理四类材料准备，保留金额、预算来源、批准人和验收付款关系未知；无实际案例与材料线索。",
+      "limitations_and_disposition": "新增财务内容确实进入回答；其核查顺序不能作为正式办理流程。",
+      "human_acceptance": "pending",
+      "runs": [
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-baaa07e19b88451398098bfb088af29d/run.json",
+          "run_id": "RUN-baaa07e19b88451398098bfb088af29d",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": false
+        },
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-81bbfb8bf61a4f8ea10919796bc91141/run.json",
+          "run_id": "RUN-81bbfb8bf61a4f8ea10919796bc91141",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q5-change",
+      "pair_id": "PAIR-6e4dfac2053e4e94a96d5c1d9467539b",
+      "critical_requirements": "supported_in_this_run",
+      "baseline": "一般变更评估建议，原安排和批准依据未知。",
+      "with_document": "明确旧核查意见不覆盖新动作，按新范围重列费用、责任及效果记录，并保留审批未知。",
+      "limitations_and_disposition": "关键范围边界有依据；开头把“客户”解释为会员，与Q3把青禾作为客户的解释不一致，该泛化称谓不采用。提议王经理“重列费用”不能作已确认职责，实际只能确认他核查材料。",
+      "human_acceptance": "pending",
+      "runs": [
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-03e2d804f0de4e47a9c7c23b328bdaf6/run.json",
+          "run_id": "RUN-03e2d804f0de4e47a9c7c23b328bdaf6",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": false
+        },
+        {
+          "status": "succeeded",
+          "run": "artifacts/w02/knowledge_runs/RUN-8710d62cb23745dd95cc1d608b01d58d/run.json",
+          "run_id": "RUN-8710d62cb23745dd95cc1d608b01d58d",
+          "error": null,
+          "semantic_review": "needs_review",
+          "include_knowledge": true
+        }
+      ]
+    }
+  ],
+  "not_adopted_as_fact": [
+    "Q5将客户泛称为会员",
+    "Q5建议王经理重列费用不作为已确认职责"
+  ],
+  "decision": "核心边界可用于学习复盘，保留表达局限，不宣称全部语义无误"
+}

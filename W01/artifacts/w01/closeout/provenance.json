@@ -1,0 +1,33 @@
+{
+  "prepared_at": "2026-11-17",
+  "evidence_cutoff": "2026-11-14，W1沈总访谈与产品样例验证",
+  "source_baseline": "W2收尾中本人补建的W1基线，非教师checkpoint",
+  "source_baseline_sha256": "7323b4da0eb80525e96bdf96429351c787ae0f7c7a5f2f680b9d2a6c69321702",
+  "mapping": {
+    "artifacts/w02/w01_support/artifacts/w01/runtime_evidence.json": "artifacts/w01/runtime_evidence.json",
+    "artifacts/w02/w01_support/artifacts/learning/independent_csv_check.json": "artifacts/learning/independent_csv_check.json",
+    "artifacts/w02/w01_support/shen-transcript.json": "artifacts/w01/sources/shen-transcript.json",
+    "artifacts/w02/w01_support/product/capabilities.json": "artifacts/w01/sources/capabilities.json"
+  },
+  "semantic_change": "无；只将证据路径改为W1包内位置，GAP-001至008及判断保留",
+  "not_prior_submission": true,
+  "original_run_evidence_unchanged": true,
+  "sources": [
+    {
+      "path": "artifacts/w01/sources/shen-transcript.json",
+      "sha256": "faf41871434a1dc4288ff9ab7af2cc9cc4df1dc165e367002c07f99637529179"
+    },
+    {
+      "path": "artifacts/w01/sources/capabilities.json",
+      "sha256": "a7a090d59351d0f7bc47bb3da1c8f3bfb98cd1bc1e7f80031b7765478817ab25"
+    },
+    {
+      "path": "artifacts/w01/sources/shen_email.md",
+      "sha256": "1b1c67996218bd143ef80006a4d7b4db94be6293a53272fff8bc1845709d30db"
+    },
+    {
+      "path": "artifacts/w01/sources/collaboration_brief.md",
+      "sha256": "cc076503a23bd1e858ec5bf5edccc5ab80fd96d3660019aa2351900d6f81aa0a"
+    }
+  ]
+}

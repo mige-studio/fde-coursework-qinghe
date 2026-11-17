@@ -1,0 +1,26 @@
+{
+  "copies": [
+    {
+      "source": "04_内部学习与参考/14_W02青禾任务说明_样本核查需求_确认事项表.md",
+      "source_sha256": "70a2cc756e4fb08425cffbe15ebe48641dfc78ac0f4d1566e338181cc3db6807",
+      "purpose": "包内独立阅读副本，调整导航并补入收尾状态；不改原始访谈"
+    },
+    {
+      "source": "04_内部学习与参考/15_W02王经理首次访谈.md",
+      "source_sha256": "8ef88935c966987ae5c3e092e350dc7903ef6b3794d5d3baea7bde89bfd57e9c",
+      "purpose": "包内独立阅读副本，调整导航并补入收尾状态；不改原始访谈"
+    }
+  ],
+  "copied_at": "2026-11-17，课程导航更新前",
+  "note": "课程源文随后增加了收尾导航，source_sha256记录复制时版本；包内阅读副本已调整链接及说明，不冒充原件。",
+  "reading_copies": [
+    {
+      "path": "docs/w02/青禾任务与确认事项.md",
+      "sha256": "e70b04ec0ff83804b84aeb84e364e442fff7894ed9fe0fcb011995211f195fdd"
+    },
+    {
+      "path": "docs/w02/王经理访谈复盘.md",
+      "sha256": "b2264331faf688246b1e4f0875f9908f6bebf338ba0bdfc850645529ccb46c06"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "method": "Independent aggregation directly from source CSV; no import of product calculation code",
+  "passed": true,
+  "rows": [
+    {
+      "member_id": "M001",
+      "before_cents": 100000,
+      "after_cents": 40000
+    },
+    {
+      "member_id": "M004",
+      "before_cents": 40000,
+      "after_cents": 0
+    },
+    {
+      "member_id": "M007",
+      "before_cents": 10000,
+      "after_cents": 0
+    }
+  ],
+  "excluded_stores": [
+    "S03"
+  ]
+}

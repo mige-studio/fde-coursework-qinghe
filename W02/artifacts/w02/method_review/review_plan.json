@@ -1,0 +1,79 @@
+{
+  "reviewer": "Codex依据原始访谈进行预审，非用户确认",
+  "baseline_run": "artifacts/w02/runs/RUN-d58e7a35739b448da97c44ea6f108bbd/run.json",
+  "custom_v1_failed_run": "artifacts/w02/runs/RUN-69b1879b69ac404689e49a64386767ae/run.json",
+  "checks": [
+    {
+      "id": "E1",
+      "check": "问答跨批时不声称整个访谈未回答",
+      "source": [
+        "MSG-05860",
+        "MSG-05861"
+      ],
+      "baseline_observation": "CLM-001-0019称本次访谈未见回答，但MSG-05861已回答原因并保留步骤未知；不采用该整体未答断言。",
+      "custom_v2_observation": "v2未再声称整个访谈未回答；CLM-002-0022保留多三步反馈，0023保留具体步骤未知。不能据一次输出证明稳定修复。"
+    },
+    {
+      "id": "E2",
+      "check": "保留付费卡与免费注册两类，但不编造人数及集合关系",
+      "source": [
+        "MSG-05853",
+        "MSG-05866",
+        "MSG-05868"
+      ],
+      "custom_v2_observation": "v2保留两类会员、全量120万和80万算法未知，未推导40万流失或两类交集。"
+    },
+    {
+      "id": "E3",
+      "check": "保留门店活动范围、运营核对及个人经验条件",
+      "source": [
+        "MSG-05885",
+        "MSG-05891",
+        "MSG-05893"
+      ],
+      "custom_v2_observation": "CLM-001-0013保留活动适用范围和找小林核对；0017保留负担与考核顾虑。但未完整保留05891的要求不清或影响考核会先澄清调整、不能默认接受，业务说明第4节从原话补回。"
+    },
+    {
+      "id": "E4",
+      "check": "保留数据完整性责任指向差异，不直接判矛盾或定责",
+      "source": [
+        "MSG-05878",
+        "MSG-05897"
+      ],
+      "custom_v2_observation": "CONFLICT-003保留双方指向差异，需分别查现场与系统覆盖，不指定唯一确认人；CONFLICT-004与此相关但侧重点头不等于正式权限，合并说明避免重复算矛盾。"
+    },
+    {
+      "id": "E5",
+      "check": "不将共同未知与未证实反馈当成实质冲突",
+      "source": [
+        "MSG-05861",
+        "MSG-05872",
+        "MSG-05876",
+        "MSG-05887"
+      ],
+      "baseline_observation": "CONFLICT-003只是小林反馈与老周未核实，不能当已成立冲突；CONFLICT-001仅按口径差异待核，CONFLICT-002作为责任边界待澄清。",
+      "custom_v2_observation": "冲突阶段仍给5个候选，002是反馈尚未验证，005是不同任务的完成口径，不构成已成立矛盾；001为不同人数口径待核。固定冲突阶段未受定制提取指令完全控制，需人工性质核查。"
+    },
+    {
+      "id": "E6",
+      "check": "取数配合不等于批准试点或正式权限",
+      "source": [
+        "MSG-05877",
+        "MSG-05878",
+        "MSG-05897"
+      ],
+      "custom_v2_observation": "CLM-002-0038保留试点建议未批准，0039保留核查条件、暂缓接入与正式权限边界；CLM-001-0020保留陈姐协调条件，不解释为批准。"
+    }
+  ],
+  "v1_error": "第二批kind误填unknown，结构校验拦截；不采用失败产物",
+  "v2_changes": "明确kind四类与evidence_status两类分工；增加批末问题不得推断整个访谈未答；保留方法v1与全部失败证据",
+  "custom_v2_run": "artifacts/w02/runs/RUN-cc0ae24e03fd4eb3a8808d1644255345/run.json",
+  "summary": {
+    "baseline_claims": 62,
+    "custom_v2_claims": 40,
+    "baseline_conflict_candidates": 3,
+    "custom_v2_conflict_candidates": 5,
+    "conclusion": "定制v2在此次运行修正了跨批未答错误，并集中表达证据边界；存在重要条件遗漏及冲突过度标记，未证明普遍更优。业务说明依据全部原件人工式预审补齐，不能直接发布candidates。",
+    "human_adoption": "pending"
+  }
+}
