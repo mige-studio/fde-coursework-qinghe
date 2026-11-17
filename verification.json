@@ -33,5 +33,12 @@
         "issues": []
       }
     }
-  ]
+  ],
+  "github": {
+    "repository": "https://github.com/mige-studio/fde-coursework-qinghe",
+    "visibility": "public",
+    "evidence_commit_verified": "a4f2337beb886a373375735cdea3e381569d379c",
+    "unauthenticated_read": "passed",
+    "remote_packages_readback": "passed"
+  }
 }
