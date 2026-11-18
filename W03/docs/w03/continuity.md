@@ -1,0 +1,4 @@
+# 第二周接续说明
+
+当前business_model.md和interview_notes.md逐字承接本人W2，不代表W3修订已完成。W2原证据复制到artifacts/w02供原引用取用；W1接续记录保留。不得将W2访谈计作第三周必访。
+第三周客户原始材料放materials/w03。customer/w02仍保留W2配置作为历史起点，尚未改为第三周提取任务；不得直接运行其旧sources并声称完成W3访谈。后续取得W3真实访谈后再初始化工作流、修改目标路径并inspect。
